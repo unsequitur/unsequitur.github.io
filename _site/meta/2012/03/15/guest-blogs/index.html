@@ -3,7 +3,12 @@
     <head>
         <meta charset="utf-8"/>
         <title> Guest Posts |  the unsequitur blog</title>
-        <link rel="stylesheet" href="/css/screen.css" />
+		<!-- Framework CSS -->
+		<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<!-- Import fancy-type plugin for the sample page. -->
+		<link rel="stylesheet" href="/css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
         <meta name="description" content="this blog is a random collection of technical articles"/>
         <meta name="author" content="unsequitur"/>
         <link rel="author" href="humans.txt"/>
@@ -11,8 +16,11 @@
 
     <body>
         <main>
-
-            <article>
+			<div class="span-4">
+				Left Thing
+			</div>
+			<div class="span-16">
+				<article>
         <header>
             <h2>Guest Posts</h2>
             <span><i class="icon-clock"></i><time datetime="2012-03-15">Mar 15, 2012</time></span><br/>
@@ -30,7 +38,7 @@ as well as on the individual post pages.</p>
 </article>
 
 
-
+			</div>
         </main>
         <footer>
             <hr>
