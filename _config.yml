@@ -20,7 +20,7 @@ category_dir: /
 #baseurl: /path/to/blog 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://unsequitur.github.io/
+url: "http://unsequitur.github.io"
 
 
 
@@ -36,6 +36,7 @@ markdown: rdiscount
 
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
+pygments: true
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: README.md, package.json, grunt.js, Gruntfile.js, node_modules
