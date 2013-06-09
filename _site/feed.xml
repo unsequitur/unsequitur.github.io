@@ -7,8 +7,8 @@
 		
 			<item>
 				<title>Guest Posts</title>
-				<description>&lt;p&gt;If you want to create a guest post that will appear as if written by another author, simply add an &lt;code&gt;author&lt;/code&gt; attribute to the
-YAML header of your blog post. This will be picked up in the template and displayed in the meta-section both on the front page
+				<description>&lt;p&gt;If you want to create a guest post that will appear as if written by another author, simply add an &lt;code&gt;author&lt;/code&gt; attribute to the 
+YAML header of your blog post. This will be picked up in the template and displayed in the meta-section both on the front page 
 as well as on the individual post pages.&lt;/p&gt;
 </description>
 				<published>Thu Mar 15 00:00:00 -0400 2012</published>
@@ -22,7 +22,6 @@ as well as on the individual post pages.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# some code goes here&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 
 &lt;p&gt;Note that this only provides color-coding. For that you might need to use a front end colorization engine like Highlight.JS or something similar.&lt;/p&gt;
 </description>

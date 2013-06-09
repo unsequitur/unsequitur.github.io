@@ -11,7 +11,15 @@
 		<link rel="stylesheet" href="/css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
         <meta name="description" content="this blog is a random collection of technical articles"/>
         <meta name="author" content="unsequitur"/>
-        <link rel="author" href="humans.txt"/>
+		<link rel="author" href="humans.txt"/>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  TeX: { equationNumbers: { autoNumber: "AMS" } }
+			  });
+        </script>
+		<script type="text/javascript"
+			    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
     </head>
 
 	<body>
@@ -39,8 +47,8 @@
             <span class="author"><i class="icon-user"></i> John Smith</span>
         </header>
 
-        <div class="entry"><p>If you want to create a guest post that will appear as if written by another author, simply add an <code>author</code> attribute to the
-YAML header of your blog post. This will be picked up in the template and displayed in the meta-section both on the front page
+        <div class="entry"><p>If you want to create a guest post that will appear as if written by another author, simply add an <code>author</code> attribute to the 
+YAML header of your blog post. This will be picked up in the template and displayed in the meta-section both on the front page 
 as well as on the individual post pages.</p>
 </div>
 
