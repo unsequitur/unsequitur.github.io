@@ -1,6 +1,7 @@
 ---
 layout: default
 title: notes
+weight: 1
 ---
 
 <h2 class="alt">notes</h2>
