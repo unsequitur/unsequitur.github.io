@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Introduction
+weight: 3
 ---
 The art of time-series modeling is to identify the joint distribution of a set
 of random variables $$X_1, X_2, \ldots, X_n$$ from a single realization of
