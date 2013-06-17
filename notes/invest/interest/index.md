@@ -35,13 +35,48 @@ useful form
 R = r+i
 \end{equation}
 
+Since the interest rates are forward looking (they refer to future cash
+flows), the inflation in equation ($$\ref{eq:rnom_mod}$$) must be replaced
+by _expected_ inflation, which results in Fischer's equation
+
+\begin{equation}
+\label{eq:fischer}
+R = r + E[i]
+\end{equation}
+
 Before we can discuss how the nominal interest rates are computed, we must
-understand the factors that influence the real interest rate and the inflation
-rate.
+understand the factors that influence the real interest rate and the 
+expected inflation rate.
 
 The real interest rate is decided based on supply
 and demand. The supply in this case refers to wealth from household savings,
-while the demand arises from industries with capital requirements. 
+while the demand arises from industries with capital requirements. Apart from
+these forces, the government (and the federal reserve) can intervene and
+skew the real interest rates. As the rate of interest offered increases, 
+investors are willing to invest larger amounts. This manifests in an upward
+sloping supply curve. Higher interest rates might discourage industries from
+borrowing, which results in a downward sloping demand curve. The intersection
+of these curves determines the real interest rates.
+
+The government has the ability to shift the supply and demand curves via
+suitable government actions. It can increase demand by starting 
+capital-intensive projects like highway constructions, which can increase
+the budget deficit. The federal reserve
+can manipulate the supply by adopting an "expansionary monetary policy"
+(one popularly known supply manipulation technique
+is quantitative easing, which we shall discuss at the end). Thus, the 
+government can manipulate the interest rates to any degree that it may desire.
+Indeed, the federal reserve has been committed to a policy of stable inflation
+rates since the 1980's[1]. 
+
+The expection inflation $$E[i]$$ serves as a discount factor for all future 
+cash flows from the Treasury bill, and cannot be predicted easily. Varying 
+expectations of inflation cause the prices of different Treasury bills to
+fluctuate, providing arbitrage opportunities to global macro traders. 
+
+Since Treasury bills and notes are considered to be risk-free (at least in the
+US), one may be tempted to ask: why should I expect to get anything more than
+a zero real rate from a riskless investment. The reason here is that the
 
 <h5>References:</h5>
 
