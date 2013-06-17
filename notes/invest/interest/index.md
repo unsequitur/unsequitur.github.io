@@ -72,7 +72,7 @@ rates since the 1980's[1].
 The expection inflation $$E[i]$$ serves as a discount factor for all future 
 cash flows from the Treasury bill, and cannot be predicted easily. Varying 
 expectations of inflation cause the prices of different Treasury bills to
-fluctuate, providing arbitrage opportunities to global macro traders. 
+fluctuate, providing speculative opportunities to global macro traders. 
 
 Since Treasury bills and notes are considered to be risk-free (at least in the
 US), one may be tempted to ask: why should I expect to get anything more than
