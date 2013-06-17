@@ -12,4 +12,6 @@ the markdown+$$\LaTeX$$ source on
 
 <hr />
 Topics:<br>
+
 1. [Applied Time Series Analysis](./tsa/)
+2. [Investments](./invest/)

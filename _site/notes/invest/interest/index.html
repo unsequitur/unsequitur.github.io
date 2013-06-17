@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> Investments |  the unsequitur blog</title>
+        <title> Interest Rates |  the unsequitur blog</title>
 		<!-- Framework CSS -->
 		<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
 		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
@@ -47,11 +47,40 @@
 				<a href="/notes/" class="caps">notes</a><br><hr class="space">
 			</div>
 			<div class="span-19 last">
-				<h2 class="alt">Investments</h2>
+				<h2 class="alt">Interest Rates</h2>
 				<hr>
-				<ol>
-  <li><a href="./riskreturn/">Historical view of risk and return</a></li>
-  <li><a href="./interest/">Interest rates</a></li>
+				<p>When economists talk about interest rates in the economy, they refer to the 
+interest rates on a broad class of government-issued securities ranging from 
+the one month T-bill to the ten year Treasury note. Since these interest
+rates often move together, it is convenient to talk about the trends associated
+with interest rates in general.</p>
+
+<p>When we talk about interest rates, we must make a distinction between two types
+of interest rates: real and nominal rates. The nominal interest rate <script type="math/tex">R</script> 
+refers to the interest that is promised on the face of the bond/bill. For 
+example, if you purchase a bond that promises to pay 5% of its face value as 
+interest each year, the the nominal interest rate in this case is 5%.</p>
+
+<p>On the other hand, the real interest rate accounts for the loss in purchasing 
+power of the currency due to inflation. If the same bond as before is issued 
+in a country with 2% annual inflation (say, <script type="math/tex">i</script>), then the nominal interest 
+rate <script type="math/tex">r</script> can be approximately computed as <script type="math/tex">r \approx R-i =</script>3%. The exact
+relationship between the real and nominal interest rates is given as</p>
+
+<p>\begin{equation}
+\label{eq:rnom}
+r = \frac{1+R}{1+i}
+\end{equation}</p>
+
+<p>Equation (<script type="math/tex">\ref{eq:rnom}</script>) becomes exact when all the rates are continuously
+compounded. </p>
+
+<h5>References:</h5>
+
+<ol>
+  <li>BKM</li>
+  <li><a href="http://www.aei.org/article/economics/fiscal-policy/what-determines-interest-rates/">American Economics Institute</a></li>
+  <li><a href="http://pfinvesting.com/2007/10/19/interest-rate/">PF &amp; Investing</a></li>
 </ol>
 
 			</div>
