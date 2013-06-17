@@ -27,10 +27,24 @@ r = \frac{1+R}{1+i}
 \end{equation}
 
 Equation ($$\ref{eq:rnom}$$) becomes exact when all the rates are continuously
-compounded. 
+compounded. We can re-arrange the approximate equation to the slightly more
+useful form
+
+\begin{equation}
+\label{eq:rnom_mod}
+R = r+i
+\end{equation}
+
+Before we can discuss how the nominal interest rates are computed, we must
+understand the factors that influence the real interest rate and the inflation
+rate.
+
+The real interest rate is decided based on supply
+and demand. The supply in this case refers to wealth from household savings,
+while the demand arises from industries with capital requirements. 
 
 <h5>References:</h5>
 
 1. BKM
-2. [American Economics Institute](http://www.aei.org/article/economics/fiscal-policy/what-determines-interest-rates/)
+2. [American Enterprise Institute](http://www.aei.org/article/economics/fiscal-policy/what-determines-interest-rates/)
 3. [PF & Investing](http://pfinvesting.com/2007/10/19/interest-rate/)
