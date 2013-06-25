@@ -74,6 +74,21 @@ cash flows from the Treasury bill, and cannot be predicted easily. Varying
 expectations of inflation cause the prices of different Treasury bills to
 fluctuate, providing speculative opportunities to global macro traders. 
 
+With the real interest rate and the expected inflation, the (nominal) interest
+rate can be directly computed from Fischer's equation. In this case, 
+
+
+The same type of 
+argument can be applied to setting the interest rates on corporate bonds. 
+However, unlike sovereign bonds, corporate bonds carry an additional 
+dimension: Risk.
+
+Risk plays an important role in setting the interest rate associated with each
+bond. When an investor decides to purchase a bond from a sovereign or a 
+company, he/she must be compensated for any risk that they incur in the
+process. From Fischer's equation, we can immediately see that the investor
+must be compensated for  inflation risk over the length of the bond. 
+ 
 Since Treasury bills and notes are considered to be risk-free (at least in the
 US), one may be tempted to ask: why should I expect to get anything more than
 a zero real rate from a riskless investment. The reason here is that the
