@@ -208,8 +208,8 @@ input.span-24, textarea.span-24 {width:938px;}
 .border-left {padding-left:4px;margin-left:5px;border-left:1px solid #ddd;}
 .colborder-left {padding-left:24px;margin-left:25px;border-left:1px solid #ddd;}
 
-.superfloat {position:fixed;}
-.foot {position:fixed;bottom:0px;background:WHITE;width:970px;}
+.superfloat {position:fixed;height:100000px}
+.foot {position:fixed;bottom:0px;background:WHITE;width:970px;height:80px;font-size:80%;}
 .content{padding-bottom:110px;}
 .pull-1 {margin-left:-40px;}
 .pull-2 {margin-left:-80px;}
