@@ -15,3 +15,4 @@ Topics:<br>
 
 1. [Applied Time Series Analysis](./tsa/)
 2. [Investments](./invest/)
+3. [Stata](./stata/)
