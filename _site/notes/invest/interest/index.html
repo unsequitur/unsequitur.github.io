@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Interest Rates |  the unsequitur blog</title>
+		<!-- Framework CSS -->
+		<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<!-- Import fancy-type plugin for the sample page. -->
+		<link rel="stylesheet" href="/css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+        <meta name="description" content="this blog is a random collection of technical articles"/>
+        <meta name="author" content="unsequitur"/>
+		<link rel="author" href="humans.txt"/>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  TeX: { equationNumbers: { autoNumber: "all" } }
+			  });
+        </script>
+		<script type="text/javascript"
+			    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container">
+			<main>
+			<hr class="space">
+			<hr class="space">
+			<hr class="space">
+<!--			<div class="span-12">
+				<img src="/images/titlepic.png" width=50px height=50px/>
+			</div>
+			<div class="span-9 last right">
+				<h2 class="alt">force fitting linear equations since 1990</h2>
+			</div>
+			<hr>-->
+			<div class="span-4 superfloat colborder instapaper_ignore">
+				<a href="/"><img src="/images/titlepic.png" width=125px height=125px/><hr class="space"></a>
+				<hr class="space">
+				<hr class="space">
+				<hr class="space">
+				<a href="/" class="caps">Home</a><br><hr class="space">
+				<a href="/blog/" class="caps">blog</a><br><hr class="space">
+				<a href="/notes/" class="caps">notes</a><br><hr class="space">
+			</div>
+			<div class="span-19 last right content instapaper_content">
+				<h2 class="alt instapaper_title">Interest Rates</h2>
+				<hr>
+				<p>When economists talk about interest rates in the economy, they refer to the 
+interest rates on a broad class of government-issued securities ranging from 
+the one month T-bill to the ten year Treasury note. Since these interest
+rates often move together, it is convenient to talk about the trends associated
+with interest rates in general.</p>
+
+<p>When we talk about interest rates, we must make a distinction between two types
+of interest rates: real and nominal rates. The nominal interest rate <script type="math/tex">R</script> 
+refers to the interest that is promised on the face of the bond/bill. For 
+example, if you purchase a bond that promises to pay 5% of its face value as 
+interest each year, the the nominal interest rate in this case is 5%.</p>
+
+<p>On the other hand, the real interest rate accounts for the loss in purchasing 
+power of the currency due to inflation. If the same bond as before is issued 
+in a country with 2% annual inflation (say, <script type="math/tex">i</script>), then the nominal interest 
+rate <script type="math/tex">r</script> can be approximately computed as <script type="math/tex">r \approx R-i =</script>3%. The exact
+relationship between the real and nominal interest rates is given as</p>
+
+<p>\begin{equation}
+\label{eq:rnom}
+r = \frac{1+R}{1+i}
+\end{equation}</p>
+
+<p>Equation (<script type="math/tex">\ref{eq:rnom}</script>) becomes exact when all the rates are continuously
+compounded. We can re-arrange the approximate equation to the slightly more
+useful form</p>
+
+<p>\begin{equation}
+\label{eq:rnom_mod}
+R = r+i
+\end{equation}</p>
+
+<p>Since the interest rates are forward looking (they refer to future cash
+flows), the inflation in equation (<script type="math/tex">\ref{eq:rnom_mod}</script>) must be replaced
+by <em>expected</em> inflation, which results in Fischer&#8217;s equation</p>
+
+<p>\begin{equation}
+\label{eq:fischer}
+R = r + E[i]
+\end{equation}</p>
+
+<p>Before we can discuss how the nominal interest rates are computed, we must
+understand the factors that influence the real interest rate and the 
+expected inflation rate.</p>
+
+<p>The real interest rate is decided based on supply
+and demand. The supply in this case refers to wealth from household savings,
+while the demand arises from industries with capital requirements. Apart from
+these forces, the government (and the federal reserve) can intervene and
+skew the real interest rates. As the rate of interest offered increases, 
+investors are willing to invest larger amounts. This manifests in an upward
+sloping supply curve. Higher interest rates might discourage industries from
+borrowing, which results in a downward sloping demand curve. The intersection
+of these curves determines the real interest rates.</p>
+
+<p>The government has the ability to shift the supply and demand curves via
+suitable government actions. It can increase demand by starting 
+capital-intensive projects like highway constructions, which can increase
+the budget deficit. The federal reserve
+can manipulate the supply by adopting an &#8220;expansionary monetary policy&#8221;
+(one popularly known supply manipulation technique
+is quantitative easing, which we shall discuss at the end). Thus, the 
+government can manipulate the interest rates to any degree that it may desire.
+Indeed, the federal reserve has been committed to a policy of stable inflation
+rates since the 1980&#8217;s[1]. </p>
+
+<p>The expection inflation <script type="math/tex">E[i]</script> serves as a discount factor for all future 
+cash flows from the Treasury bill, and cannot be predicted easily. Varying 
+expectations of inflation cause the prices of different Treasury bills to
+fluctuate, providing speculative opportunities to global macro traders. </p>
+
+<p>With the real interest rate and the expected inflation, the (nominal) interest
+rate can be directly computed from Fischer&#8217;s equation. In this case, </p>
+
+<p>The same type of 
+argument can be applied to setting the interest rates on corporate bonds. 
+However, unlike sovereign bonds, corporate bonds carry an additional 
+dimension: Risk.</p>
+
+<p>Risk plays an important role in setting the interest rate associated with each
+bond. When an investor decides to purchase a bond from a sovereign or a 
+company, he/she must be compensated for any risk that they incur in the
+process. From Fischer&#8217;s equation, we can immediately see that the investor
+must be compensated for  inflation risk over the length of the bond. </p>
+
+<p>Since Treasury bills and notes are considered to be risk-free (at least in the
+US), one may be tempted to ask: why should I expect to get anything more than
+a zero real rate from a riskless investment. The reason here is that the</p>
+
+<h5>References:</h5>
+
+<ol>
+  <li>BKM</li>
+  <li><a href="http://www.aei.org/article/economics/fiscal-policy/what-determines-interest-rates/">American Enterprise Institute</a></li>
+  <li><a href="http://pfinvesting.com/2007/10/19/interest-rate/">PF &amp; Investing</a></li>
+</ol>
+
+			</div>
+			</main>
+			<hr class="space">
+			<div class="span-24 foot instapaper_ignore">
+				<hr>
+			<p><center><a href="mailto:foobar4life@gmail.com?Subject:Blog">Contact</a> 
+				| Except where otherwise noted, content on this site is licensed 
+				under a Creative Commons Attribution 3.0 License |
+				Powered by <a href="http://www.jekyllrb.com">Jekyll</a>,
+				<a href="http://blueprintcss.org">Blueprint</a>	and
+			    <a href="http://www.mathjax.org/">MathJax</a></center></p>
+		</div>
+		</div>
+    </body>
+
+</html>
