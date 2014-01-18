@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Mata |  the unsequitur blog</title>
+		<!-- Framework CSS -->
+		<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<!-- Import fancy-type plugin for the sample page. -->
+		<link rel="stylesheet" href="/css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+        <meta name="description" content="this blog is a random collection of technical articles"/>
+        <meta name="author" content="unsequitur"/>
+		<link rel="author" href="humans.txt"/>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  TeX: { equationNumbers: { autoNumber: "all" } }
+			  });
+        </script>
+		<script type="text/javascript"
+			    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container">
+			<main>
+			<hr class="space">
+			<hr class="space">
+			<hr class="space">
+<!--			<div class="span-12">
+				<img src="/images/titlepic.png" width=50px height=50px/>
+			</div>
+			<div class="span-9 last right">
+				<h2 class="alt">force fitting linear equations since 1990</h2>
+			</div>
+			<hr>-->
+			<div class="span-4 superfloat colborder instapaper_ignore">
+				<a href="/"><img src="/images/titlepic.png" width=125px height=125px/><hr class="space"></a>
+				<hr class="space">
+				<hr class="space">
+				<hr class="space">
+				<a href="/" class="caps">Home</a><br><hr class="space">
+				<a href="/blog/" class="caps">blog</a><br><hr class="space">
+				<a href="/notes/" class="caps">notes</a><br><hr class="space">
+			</div>
+			<div class="span-19 last right content instapaper_content">
+				<h2 class="alt instapaper_title">Mata</h2>
+				<hr>
+				<h1 id="introduction">Introduction</h1>
+<p>Mata is a high performance matrix language embedded within Stata[<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>]. It 
+provides a number of matrix operations that MATLAB users might be familiar
+with. There are several tutorials[<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>][<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>][<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>][<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup>] available online, but for a 
+comprehensive review of Mata, I would recommend StataCorp&#8217;s own Mata 
+documentation<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup> and Kit Baum&#8217;s book<sup id="fnref:7"><a href="#fn:7" class="footnote">7</a></sup>. This page is a collection of
+Mata miscellanny that I find useful. I hope that it turns out to be useful for
+someone else as well. </p>
+
+<h1 id="starting-a-mata-session">Starting a Mata session</h1>
+<p>You can start an interactive Mata session within Stata by typing
+<code>mata</code> in the command window. Similarly, you can end the 
+session using the <code>end</code> command. Note that none of the Mata definitions and 
+functions are lost after typing the <code>end</code> command. To completely clear your
+Mata workspace, either start a new Stata session or use the <code>mata clear</code>
+command.</p>
+
+<p>To use Mata commands in your do file, simply wrap the relevant Mata commands
+with <code>mata</code> and <code>end</code>!</p>
+
+<h1 id="matrix-operations">Matrix operations</h1>
+
+<h2 id="creating-matrices">Creating matrices</h2>
+
+<p>Unlike plain Stata, there is no need to use <code>gen</code> commands to create variables
+in Mata. There are 2 ways to create matrices (note that scalars are simply
+special cases of matrices):</p>
+
+<pre><code>A = (1,3\5,9)
+</code></pre>
+
+<p>This will create a matrix <code>A</code>. You can view the contents of matrix <code>A</code> by 
+simply typing <code>A</code> in the command window:</p>
+
+<p><img src="./assets/matrix1.png" alt="Matrix A" /></p>
+
+<p>To create matrices with identical entries, we will use the <code>J(...)</code> command
+in Mata:</p>
+
+<pre><code>A = J(2,2,1)
+</code></pre>
+
+<p>This creates a <code>2 x 2</code> matrix whose entries are all 1:</p>
+
+<p><img src="./assets/matrix2.png" alt="Matrix A" /></p>
+
+<p>Note that for a symmetric matrix, Stata does not display the upper diagonal 
+entries.</p>
+
+<h1 id="references">References:</h1>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="http://www.stata.com/features/overview/introduction-to-mata/">StataCorp Mata page</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="http://kurt.schmidheiny.name/teaching/statamata2up.pdf">Kurt Schmidheiny&#8217;s tutorial</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="http://www.ssc.wisc.edu/sscc/pubs/4-26.htm">SSCC @ UWisc-Mad tutorial</a><a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="http://ideas.repec.org/p/boc/usug08/11.html">Kit Baum&#8217;s tutorial</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="http://www.stata.com/meeting/chicago11/materials/chi11_gould.pdf">Bill Gould&#8217;s tutorial</a> <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="http://www.stata.com/manuals13/m.pdf">StataCorp&#8217;s Mata manual</a> <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p><a href="http://www.amazon.com/Introduction-Stata-Programming-Christopher-Baum/dp/1597180459/">Kit Baum&#8217;s book</a> <a href="#fnref:7" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+			</div>
+			</main>
+			<hr class="space">
+			<div class="span-24 foot instapaper_ignore">
+				<hr>
+			<p><center><a href="mailto:foobar4life@gmail.com?Subject:Blog">Contact</a> 
+				| Except where otherwise noted, content on this site is licensed 
+				under a Creative Commons Attribution 3.0 License |
+				Powered by <a href="http://www.jekyllrb.com">Jekyll</a>,
+				<a href="http://blueprintcss.org">Blueprint</a>	and
+			    <a href="http://www.mathjax.org/">MathJax</a></center></p>
+		</div>
+		</div>
+    </body>
+
+</html>
